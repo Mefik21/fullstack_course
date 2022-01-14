@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/Mefik21/fullstack_course#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "@types/node": "^17.0.8",
+    "express": "^4.17.2",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0"
   }
 }
