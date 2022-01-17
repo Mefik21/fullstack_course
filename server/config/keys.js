@@ -11,3 +11,4 @@ module.exports = {
     mongoURI: 'mongodb+srv://mr_mefik_9999:U7kv8fUtDhyYFgf@emaily.sbfty.mongodb.net/emaily?retryWrites=true&w=majority',
     cookieKey: 'asdad9&hiuoaf98y)*3124iouUoy34h_)_)(orwei!##3123'
 };
+// mongodb+srv://mr_mefik_9999:U7kv8fUtDhyYFgf@emaily.kr6bt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
