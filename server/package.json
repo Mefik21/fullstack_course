@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "node_modules/.bin/nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,9 @@
   "homepage": "https://github.com/Mefik21/fullstack_course#readme",
   "dependencies": {
     "@types/node": "^17.0.8",
+    "cookie-session": "^2.0.0",
     "express": "^4.17.2",
+    "mongoose": "^6.1.6",
     "nodemon": "^2.0.15",
     "passport": "^0.5.2",
     "passport-google-oauth20": "^2.0.0"
