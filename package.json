@@ -2,14 +2,14 @@
   "name": "fullstack_course",
   "version": "1.0.0",
   "description": "",
-  "main": "server/index.js",
+  "main": "index.js",
   "engines": {
     "node": "14.x",
     "npm": "6.x"
   },
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "index.js",
+    "dev": "index.js"
   },
   "repository": {
     "type": "git",
