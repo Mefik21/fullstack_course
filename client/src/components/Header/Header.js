@@ -1,12 +1,14 @@
 import './header.scss';
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import Payments from '../Payments/Payments';
 
 const Header = (props) => {
-    console.log(props);
+    const {auth} = props;
 
     function renderContent() {
-        switch (props.auth.user) {
+        switch (auth.user) {
             case null:
                 return;
             case false:
@@ -15,7 +17,11 @@ const Header = (props) => {
                 );
             default:
                 return (
-                    <li><a href='/api/logout'>Logout</a></li>
+                    <>
+                        <li><Payments/></li>
+                        <li>Кредитов на счету: {auth.user.credits}</li>
+                        <li><a href='/api/logout'>Logout</a></li>
+                    </>
                 );
         }
     }
@@ -23,7 +29,7 @@ const Header = (props) => {
     return (
         <nav>
             <div className='nav-wrapper'>
-                <a className='brand-logo'>Emaily</a>
+                <Link to={auth.user ? '/surveys' : '/'} className='brand-logo'>Emaily</Link>
                 <ul id='nav-mobile' className='right'>
                     {renderContent()}
                 </ul>

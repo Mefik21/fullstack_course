@@ -1,4 +1,4 @@
-import 'materialize-css/dist/css/materialize.min.css'
+import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -16,3 +16,4 @@ ReactDOM.render(
     </Provider>,
     document.querySelector('#root')
 );
+
