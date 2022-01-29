@@ -13,7 +13,7 @@ const App = (props) => {
 
     useEffect(() => {
         fetchUser();
-    }, [fetchUser]);
+    }, []);
 
     return (
         <Router>

@@ -33,6 +33,7 @@ module.exports = (app) => {
             req.user.credits -= 1;
 
             const user = await req.user.save();
+            console.log(mailer)
             res.send(user);
 
         } catch (error) {
