@@ -1,11 +1,11 @@
-import * as types from '../actions/types';
+import {FETCH_USER} from '../actions/types';
 const initialState = {
     user: null
 };
 
 export default function authReducer(state = initialState, action) {
     switch (action.type) {
-        case types.FETCH_USER:
+        case FETCH_USER:
             return {
                 ...state,
                 user: action.payload || false
